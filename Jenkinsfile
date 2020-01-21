@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                
-                sh 'ssh ubuntu@ec2-54-242-6-59.compute-1.amazonaws.com'
-                sh 'cp index.html /var/www/html/WebProject/' 
+                sh 'who iam i'
+                // sh 'ssh ubuntu@ec2-54-242-6-59.compute-1.amazonaws.com'
+                // sh 'cp index.html /var/www/html/WebProject/' 
             }
         }
     }
