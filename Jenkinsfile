@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'who iam i'
-                // sh 'ssh ubuntu@ec2-54-242-6-59.compute-1.amazonaws.com'
+                // sh 'who iam i'
+                sh  'scp -i "nagarjun.pem" index.html ubuntu@ec2-54-160-250-82.compute-1.amazonaws.com:~/var/www/html/WebProject/'
                 // sh 'cp index.html /var/www/html/WebProject/' 
             }
         }
